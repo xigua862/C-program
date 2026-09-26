@@ -1,11 +1,11 @@
 # C-Isaac（暂名）
 
-用纯 C + [raylib](https://www.raylib.com/) 复刻《以撒的结合》核心玩法的 roguelike 学习项目。
+用 **C++17 + [raylib](https://www.raylib.com/)** 复刻《以撒的结合》核心玩法的 roguelike 学习项目。raylib 是 C 库，C++ 可直接使用（头文件自带 `extern "C"` 适配）。
 
 ## 开发环境
 
 - Windows 10/11
-- [w64devkit](https://github.com/skeeto/w64devkit)（GCC + GNU make，绿色便携）
+- [w64devkit](https://github.com/skeeto/w64devkit)（g++ + GNU make，绿色便携）
 - raylib 6.0（`vendor/` 目录自带预编译库，clone 即可编译，无需另行下载）
 
 ## 构建与运行

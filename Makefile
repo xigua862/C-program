@@ -1,16 +1,16 @@
 RAYLIB_DIR = vendor/raylib
 
-CC      = gcc
-CFLAGS  = -std=c99 -O2 -Wall -I$(RAYLIB_DIR)/include
+CXX      = g++
+CXXFLAGS = -std=c++17 -O2 -Wall -I$(RAYLIB_DIR)/include
 LDFLAGS = -L$(RAYLIB_DIR)/lib -lraylib -lopengl32 -lgdi32 -lwinmm
 
-SRC = $(wildcard src/*.c)
+SRC = $(wildcard src/*.cpp)
 BIN = game.exe
 
 all: $(BIN)
 
 $(BIN): $(SRC)
-	$(CC) $(SRC) -o $(BIN) $(CFLAGS) $(LDFLAGS)
+	$(CXX) $(SRC) -o $(BIN) $(CXXFLAGS) $(LDFLAGS)
 
 run: $(BIN)
 	./$(BIN)
