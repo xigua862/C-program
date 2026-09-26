@@ -1,0 +1,15 @@
+# 构建产物
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+
+# 编辑器
+.vscode/
+.idea/
+.vs/
+
+# 系统
+.DS_Store
+Thumbs.db
